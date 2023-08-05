@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".activities.AddItemActivity">
+
+    <include layout="@layout/component_edit_text_2line" />
+
+    <include
+        layout="@layout/component_base_switch"
+        android:id="@+id/useDateRangeSwitch" />
+
+    <include
+        layout="@layout/component_base_switch"
+        android:id="@+id/matchTermDateSwitch" />
+
+    <LinearLayout
+        android:id="@+id/startDateGroup"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/editTextStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:height="48dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:ems="10"
+            android:hint="@string/start_date_label"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/pickStartDateButton"
+            android:contentDescription="@string/pick_start_date_spoken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="48dp"
+            android:layout_weight="1"
+            android:text="@string/start_date_label" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/endDateGroup"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/editTextEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:height="48dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:ems="10"
+            android:hint="@string/end_date_label"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/pickEndDateButton"
+            android:contentDescription="@string/pick_start_date_spoken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="48dp"
+            android:layout_weight="1"
+            android:text="@string/end_date_label" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/courseInstructorField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/instructor_choose_name_hint"
+        style="@style/EditTex" />
+
+    <Spinner
+        android:id="@+id/addItemStatusSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="48dp"
+        android:minHeight="48dp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editAddItemNoteText"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:allowUndo="true"
+        android:autoLink="all"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/note_hint_string"
+        android:inputType="textMultiLine"
+        android:importantForAutofill="no"
+        android:singleLine="true" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/saveEntryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteX="5dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

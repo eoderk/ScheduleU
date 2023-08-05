@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/mainSummaryView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" >
+
+    <TextView
+        android:id="@+id/summaryViewLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="48dp"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:padding="5dp"
+        android:text="@string/schedule_summary_title"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/currentTermLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="48dp"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:padding="5dp"
+        android:text="@string/current_term_label"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/summaryViewItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:text="Not Enrolled" />
+
+    <TextView
+        android:id="@+id/comingUpLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="48dp"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:padding="5dp"
+        android:text="@string/coming_up_label"
+        android:textSize="26sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mainUpcomingList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainSummaryView" />
+
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
+
+        <Button
+            android:id="@+id/navigationButtonTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/term_activity_label" />
+
+        <Button
+            android:id="@+id/navigationButtonCourses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/course_activity_label" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

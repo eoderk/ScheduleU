@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/shareNoteOption"
+        android:title="Share" >
+            <menu
+                 >
+                <item
+                    android:id="@+id/sendNoteToSMS"
+                    android:title="SMS Text" />
+
+                <item
+                    android:id="@+id/sendNoteToEmail"
+                    android:title="Email" />
+
+            </menu>
+    </item>
+
+    <item
+        android:id="@+id/copyNoteOption"
+        android:title="Copy" />
+    <item
+        android:id="@+id/deleteNoteOption"
+        android:title="Delete" />
+</menu>

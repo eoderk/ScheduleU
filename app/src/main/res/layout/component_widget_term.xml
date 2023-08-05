@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/component_base_label"
+        android:id="@+id/termNameLabel" />
+
+    <include
+        layout="@layout/component_base_edit_text"
+        android:id="@+id/termEditName" />
+
+
+    <include
+        layout="@layout/component_base_label"
+        android:id="@+id/termStartDateLabel" />
+
+    <include
+        layout="@layout/component_base_edit_text"
+        android:id="@+id/termEditStartDate" />
+
+    <include
+        layout="@layout/component_base_label"
+        android:id="@+id/termEndDateLabel" />
+
+    <include
+        layout="@layout/component_base_edit_text"
+        android:id="@+id/termEditEndDate" />
+
+</LinearLayout>
+

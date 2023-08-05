@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CourseDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+    <include
+        layout="@layout/component_widget_course"
+        android:id="@+id/widgetCourseDetailsView" />
+
+    <include
+        layout="@layout/component_base_switch"
+        android:id="@+id/matchTermDateSwitch" />
+
+    <Spinner
+        android:id="@+id/courseStatusSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp" />
+
+    <include
+        layout="@layout/component_note_field"
+        android:id="@+id/courseDetailNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        layout="@layout/component_list_with_fab_widget"
+        android:id="@+id/courseAssessmentListView"
+        app:layout_constraintTop_toBottomOf="@id/courseDetailNote" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

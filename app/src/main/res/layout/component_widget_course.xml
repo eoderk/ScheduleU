@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <include
+        layout="@layout/component_base_label"
+        android:id="@+id/courseNameLabel" />
+
+    <include
+        layout="@layout/component_base_edit_text"
+        android:id="@+id/courseEditName" />
+
+    <include
+        layout="@layout/component_base_label"
+        android:id="@+id/courseStartDateLabel" />
+
+    <include
+        layout="@layout/component_base_edit_text"
+        android:id="@+id/courseEditStartDate" />
+
+    <include
+        layout="@layout/component_base_label"
+        android:id="@+id/courseEndDateLabel" />
+
+    <include
+        layout="@layout/component_base_edit_text"
+        android:id="@+id/courseEditEndDate" />
+
+    <include
+        layout="@layout/component_base_label"
+        android:id="@+id/courseTermNameLabel" />
+
+    <include
+        layout="@layout/component_base_edit_text"
+        android:id="@+id/courseEditTerm" />
+
+    <include
+        layout="@layout/component_base_label"
+        android:id="@+id/courseInstructorLabel" />
+
+    <include
+        layout="@layout/component_two_col_list_view"
+        android:id="@+id/courseEditInstructor" />
+
+</LinearLayout>
+

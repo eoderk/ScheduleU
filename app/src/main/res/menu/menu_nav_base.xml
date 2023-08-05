@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.evanknight.scheduleu.activities.MainActivity">
+
+
+    <item
+        android:id="@+id/termsOption"
+        android:orderInCategory="100"
+        android:title="Terms" />
+
+    <item
+        android:id="@+id/coursesOption"
+        android:orderInCategory="200"
+        android:title="Courses" />
+
+    <item
+        android:id="@+id/assessmentsOption"
+        android:orderInCategory="300"
+        android:title="Assessments" />
+
+</menu>

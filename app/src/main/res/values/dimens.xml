@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_layout_height">64dp</dimen>
+    <dimen name="fab_layout_width">64dp</dimen>
+    <dimen name="bar_size">64dp</dimen>
+    <dimen name="text_size_">32sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="component_padding">5dp</dimen>
+    <dimen name="component_text_size">16sp</dimen>
+    <dimen name="component_two_col_padding">7dp</dimen>
+    <dimen name="component_edit_text_min_height">48dp</dimen>
+    <dimen name="component_text_view_min_height">38dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">0dp</dimen>
+</resources>

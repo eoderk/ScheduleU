@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <include
+        layout="@layout/component_base_label"
+        android:id="@+id/assessmentNameLabel" />
+
+    <include
+        layout="@layout/component_base_edit_text"
+        android:id="@+id/assessmentEditName" />
+
+
+    <include
+        layout="@layout/component_base_label"
+        android:id="@+id/assessmentStartDateLabel" />
+
+    <include
+        layout="@layout/component_base_edit_text"
+        android:id="@+id/assessmentEditStartDate" />
+
+    <include
+        layout="@layout/component_base_label"
+        android:id="@+id/assessmentEndDateLabel" />
+
+    <include
+        layout="@layout/component_base_edit_text"
+        android:id="@+id/assessmentEditEndDate" />
+
+</LinearLayout>
+
